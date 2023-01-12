@@ -18,8 +18,8 @@ jobs:
     steps:
       - run: date
       
-  depends: windows-latest
+  depends: 
     needs: [ubuntu, windows, macos]
-    runs-on:
+    runs-on: windows-latest
     steps:
       - run: date
